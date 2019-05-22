@@ -1,0 +1,40 @@
+
+<!-- HTML -->
+<div class="container">
+  <strong style="text-align: center;">list</strong>
+  <ul class="list">
+  	<li class="list-element">
+      <div class="list-content">1 element</div>
+    </li>
+  	<li class="list-element">
+      <div class="list-content">2 element</div>
+    </li>
+  	<li class="list-element">
+      <div class="list-content">3 element</div>
+    </li>
+  	<li class="list-element">
+      <div class="list-content">4 element</div>
+    </li>
+  	<li class="list-element">
+      <div class="list-content">5 element</div>
+    </li>
+  </ul>
+</div>
+
+<!-- CSS -->
+<style>
+* { box-sizing:border-box; font-family:Lato; }
+html, body { margin:0; padding:0; height:100%; }
+.container { height:100%; background:beige }
+.list { padding: 0; } /* list-style:none */ /* But what about the LIST NUMBERS, POINTERS....??? */
+.list-element { margin:8px; }
+.list-content { background-color: mediumseagreen }
+.list-content:hover { cursor: pointer }
+
+/* Nice alternative to flex/grid when centered text is needed! */
+.list-content {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px; 
+}
+</style>
